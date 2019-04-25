@@ -10,7 +10,7 @@
       <br>
       <p>This elective is taught by: {{elective.teacher}}</p>
       
-      <button  mat-raised-button color="primary" type="redirect" routerLink="../students/{{elective._id}}">See Students</button>
+      <button  mat-raised-button color="primary" [routerLink]="['/electives/students', elective._id]">See Students</button>
         
     </mat-card-content>
 
